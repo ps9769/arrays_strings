@@ -1,16 +1,19 @@
 <?php
 
-     $obj = new main();
+  $obj = new main();
+    $obj->array_functions();
 
-     $text = "my text";
-     $obj->printthis($text);
-
-     
-
-      public function printthis($text)
-      {
-          echo '<h1>print function demo </h1>';
-	    print($text);
-             echo '<hr>';
-	     }
+    class main
+        {   
+	public function array_functions()		   
+	{      
+	    $cars = array("L" => "Lamborghini", "F" => "Ferrari", "B" =>
+	    "Bentley, "P" => "Pagani");
+	    arsort($cars);
+	    foreach ($cars as $key =>val)
+	  { print("$key = $val\n");	
+	    }
+	  
+	  }
+	  ?>
 
